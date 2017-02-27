@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E06244591E5D1CAA009B25A6"
+               BlueprintIdentifier = "E09E66F41E63CFBD006174E2"
                BuildableName = "RNMoody.app"
                BlueprintName = "RNMoody"
                ReferencedContainer = "container:RNMoody.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E062446D1E5D1CAB009B25A6"
+               BlueprintIdentifier = "E09E67081E63CFBE006174E2"
                BuildableName = "RNMoodyTests.xctest"
                BlueprintName = "RNMoodyTests"
                ReferencedContainer = "container:RNMoody.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E06244781E5D1CAB009B25A6"
+               BlueprintIdentifier = "E09E67131E63CFBE006174E2"
                BuildableName = "RNMoodyUITests.xctest"
                BlueprintName = "RNMoodyUITests"
                ReferencedContainer = "container:RNMoody.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E06244591E5D1CAA009B25A6"
+            BlueprintIdentifier = "E09E66F41E63CFBD006174E2"
             BuildableName = "RNMoody.app"
             BlueprintName = "RNMoody"
             ReferencedContainer = "container:RNMoody.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E06244591E5D1CAA009B25A6"
+            BlueprintIdentifier = "E09E66F41E63CFBD006174E2"
             BuildableName = "RNMoody.app"
             BlueprintName = "RNMoody"
             ReferencedContainer = "container:RNMoody.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E06244591E5D1CAA009B25A6"
+            BlueprintIdentifier = "E09E66F41E63CFBD006174E2"
             BuildableName = "RNMoody.app"
             BlueprintName = "RNMoody"
             ReferencedContainer = "container:RNMoody.xcodeproj">

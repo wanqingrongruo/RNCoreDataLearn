@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  RNMoody
 //
-//  Created by 婉卿容若 on 2017/2/22.
+//  Created by 婉卿容若 on 2017/2/27.
 //  Copyright © 2017年 婉卿容若. All rights reserved.
 //
 
@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let managedObjectContext = createMoodyMainContext() // 初始化上下文
+        
+        
         return true
     }
 
