@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
-class RNRootViewController: UIViewController {
+class RNRootViewController: UIViewController, ManagedObjectContextSettable {
 
     @IBOutlet weak var hideCameraConstraint: NSLayoutConstraint!
+    
+    // properties
+    var managedObjectContext: NSManagedObjectContext!
     
     override func viewDidLoad() {
         super.viewDidLoad()

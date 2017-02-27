@@ -13,7 +13,7 @@ import CoreData
 // private var baseURL =  URL.documentsURL
 private let StoreURL = URL.documentsURL.appendingPathComponent("RNMoony.moody")
 
-public func createMoodyMainContext() -> NSManagedObjectContext {
+public func createMoodyMainContext() -> NSManagedObjectContext? {
     
     let bundles = [Bundle(for: Mood.self)] // 获取对象模型所在的 bundle
     guard let model = NSManagedObjectModel.mergedModel(from: bundles) else{ // 加载数据模型, 将他们合并成一个托管对象模型

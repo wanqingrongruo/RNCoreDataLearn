@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var managedObjectContext: NSManagedObjectContext!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        let managedObjectContext = createMoodyMainContext() // 初始化上下文
+        // 初始化上下文
+        guard let context = createMoodyMainContext() else { fatalError() }
+        managedObjectContext = context
+        
+        guard let vc = window?.rootViewController as? ManagedObjectContextSettable else {
+            fatalError(" Wrong view Controller type")
+        }
+        vc.managedObjectContext = managedObjectContext
         
         
         return true
