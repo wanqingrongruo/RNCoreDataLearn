@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0098E741E65560000B36FEA /* RNSegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0098E731E65560000B36FEA /* RNSegueHandlerType.swift */; };
 		E09E66F91E63CFBD006174E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E66F81E63CFBD006174E2 /* AppDelegate.swift */; };
 		E09E66FB1E63CFBD006174E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E66FA1E63CFBD006174E2 /* ViewController.swift */; };
 		E09E66FE1E63CFBD006174E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E09E66FC1E63CFBD006174E2 /* Main.storyboard */; };
@@ -21,6 +22,8 @@
 		E0F4DE1C1E6403C200FB8C41 /* ExtensionUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4DE1B1E6403C200FB8C41 /* ExtensionUtilities.swift */; };
 		E0F4DE1E1E6425A400FB8C41 /* ManagedObjectContextSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4DE1D1E6425A400FB8C41 /* ManagedObjectContextSettable.swift */; };
 		E0F4DE231E6426D800FB8C41 /* RNRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4DE221E6426D800FB8C41 /* RNRootViewController.swift */; };
+		E0F4DE251E6518B100FB8C41 /* RNCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4DE241E6518B100FB8C41 /* RNCameraViewController.swift */; };
+		E0F4DE271E6518CC00FB8C41 /* RNRegionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F4DE261E6518CC00FB8C41 /* RNRegionsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0098E731E65560000B36FEA /* RNSegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNSegueHandlerType.swift; sourceTree = "<group>"; };
 		E09E66F51E63CFBD006174E2 /* RNMoody.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNMoody.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09E66F81E63CFBD006174E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		E09E66FA1E63CFBD006174E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 		E0F4DE1B1E6403C200FB8C41 /* ExtensionUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUtilities.swift; sourceTree = "<group>"; };
 		E0F4DE1D1E6425A400FB8C41 /* ManagedObjectContextSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectContextSettable.swift; sourceTree = "<group>"; };
 		E0F4DE221E6426D800FB8C41 /* RNRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNRootViewController.swift; sourceTree = "<group>"; };
+		E0F4DE241E6518B100FB8C41 /* RNCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCameraViewController.swift; sourceTree = "<group>"; };
+		E0F4DE261E6518CC00FB8C41 /* RNRegionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNRegionsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0098E721E6555D800B36FEA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E0098E731E65560000B36FEA /* RNSegueHandlerType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		E09E66EC1E63CFBD006174E2 = {
 			isa = PBXGroup;
 			children = (
@@ -113,9 +127,10 @@
 		E09E66F71E63CFBD006174E2 /* RNMoody */ = {
 			isa = PBXGroup;
 			children = (
-				E0F4DE211E6426A300FB8C41 /* startDoor */,
-				E0F4DE1F1E64266A00FB8C41 /* VIewControllers */,
+				E0F4DE211E6426A300FB8C41 /* Entrance */,
+				E0F4DE1F1E64266A00FB8C41 /* ViewControllers */,
 				E0F4DE201E64266A00FB8C41 /* Views */,
+				E0098E721E6555D800B36FEA /* Protocols */,
 			);
 			path = RNMoody;
 			sourceTree = "<group>";
@@ -166,11 +181,14 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		E0F4DE1F1E64266A00FB8C41 /* VIewControllers */ = {
+		E0F4DE1F1E64266A00FB8C41 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				E0F4DE221E6426D800FB8C41 /* RNRootViewController.swift */,
+				E0F4DE241E6518B100FB8C41 /* RNCameraViewController.swift */,
+				E0F4DE261E6518CC00FB8C41 /* RNRegionsTableViewController.swift */,
 			);
+			name = ViewControllers;
 			path = VIewControllers;
 			sourceTree = "<group>";
 		};
@@ -181,7 +199,7 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		E0F4DE211E6426A300FB8C41 /* startDoor */ = {
+		E0F4DE211E6426A300FB8C41 /* Entrance */ = {
 			isa = PBXGroup;
 			children = (
 				E09E66F81E63CFBD006174E2 /* AppDelegate.swift */,
@@ -191,6 +209,7 @@
 				E09E67011E63CFBE006174E2 /* LaunchScreen.storyboard */,
 				E09E67041E63CFBE006174E2 /* Info.plist */,
 			);
+			name = Entrance;
 			path = startDoor;
 			sourceTree = "<group>";
 		};
@@ -329,15 +348,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0098E741E65560000B36FEA /* RNSegueHandlerType.swift in Sources */,
 				E09E66FB1E63CFBD006174E2 /* ViewController.swift in Sources */,
 				E09E67291E63D017006174E2 /* Moody.xcdatamodeld in Sources */,
 				E0F4DE1E1E6425A400FB8C41 /* ManagedObjectContextSettable.swift in Sources */,
 				E0F4DE1C1E6403C200FB8C41 /* ExtensionUtilities.swift in Sources */,
 				E0F4DE231E6426D800FB8C41 /* RNRootViewController.swift in Sources */,
+				E0F4DE271E6518CC00FB8C41 /* RNRegionsTableViewController.swift in Sources */,
 				E09E672B1E63D06D006174E2 /* ManagedObject.swift in Sources */,
 				E09E67311E63D342006174E2 /* Mood.swift in Sources */,
 				E09E66F91E63CFBD006174E2 /* AppDelegate.swift in Sources */,
 				E0F4DE161E6401E200FB8C41 /* MoodyStack.swift in Sources */,
+				E0F4DE251E6518B100FB8C41 /* RNCameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
